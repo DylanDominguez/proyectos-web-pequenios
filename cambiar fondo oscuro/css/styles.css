@@ -5,6 +5,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    transition: ease .4s;
 }
 
 .label{
@@ -28,7 +29,7 @@ body{
     top: 3px;
     left: 3px;
     position: absolute;
-    animation: toggleOff .4s linear forwards;
+    animation: toggleOff 0.4s linear forwards;
 }
 
 .input:checked + .label{
@@ -36,7 +37,7 @@ body{
 }
 
 .input:checked + .label .circle{
-    animation: toggleOn .4s linear forwards;
+    animation: toggleOn 0.4s linear forwards;
 }
 
 @keyframes toggleOn {
